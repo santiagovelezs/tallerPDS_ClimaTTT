@@ -1,0 +1,29 @@
+<div class="col mt-4">
+    <h1>Triqui</h1>
+    <h1>{{ winner }}</h1>
+    <div class="btn-group" role="group" aria-label="Basic example">
+        <button type="button" class="btn btn-secondary" (click)="put(0,0)">[ {{ tablero[0][0] }} ]</button>
+        <button type="button" class="btn btn-secondary" (click)="put(0,1)">[ {{ tablero[0][1] }} ]</button>
+        <button type="button" class="btn btn-secondary" (click)="put(0,2)">[ {{ tablero[0][2] }} ]</button>
+    </div>
+    <div></div>
+    <div class="btn-group" role="group" aria-label="Basic example">
+        <button type="button" class="btn btn-secondary" (click)="put(1,0)">[ {{ tablero[1][0] }} ]</button>
+        <button type="button" class="btn btn-secondary" (click)="put(1,1)">[ {{ tablero[1][1] }} ]</button>
+        <button type="button" class="btn btn-secondary" (click)="put(1,2)">[ {{ tablero[1][2] }} ]</button>
+    </div>
+    <div></div>
+    <div class="btn-group" role="group" aria-label="Basic example">
+        <button type="button" class="btn btn-secondary" (click)="put(2,0)">[ {{ tablero[2][0] }} ]</button>
+        <button type="button" class="btn btn-secondary" (click)="put(2,1)">[ {{ tablero[2][1] }} ]</button>
+        <button type="button" class="btn btn-secondary" (click)="put(2,2)">[ {{ tablero[2][2] }} ]</button>
+    </div>
+    <hr>
+    <p>Partidas Jugadas: {{ pJugadas }}</p>
+    <p>Partidas Ganadas: {{ pGanadas }}</p>
+    <p>Partidas Perdidas: {{ pPerdidas }}</p>
+    <p>Partidas Empatadas: {{ pEmpatadas }}</p>
+    <div class="form-group">
+        <button type="button" class="btn btn-primary" (click)="reset()">Reset</button>
+    </div>
+</div>
